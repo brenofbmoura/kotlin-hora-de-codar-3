@@ -1,0 +1,22 @@
+var soma = 0.0
+var nota = 0.0
+fun inicio(){
+    for (i in 1..6){
+    do {
+            println("Digite sua $i° nota: ")
+        nota = readLine()!!.toDouble()
+        if (nota < 0 || nota > 10){
+            println("Nota inválida! Digite outra ")
+        }
+        } while (nota < 0 || nota > 10)
+    soma += nota
+    }
+}
+fun lerNota(){
+    var media = soma / 6.0
+    println("Média: $media")
+}
+fun main(){
+    inicio()
+    lerNota()
+}
