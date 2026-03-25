@@ -1,0 +1,5 @@
+fun main(){
+    for (c in 10 downTo 1){
+        println ("$c")
+    }
+}
