@@ -1,0 +1,12 @@
+fun main(){
+    println("Digite o 1° valor: ")
+    var num1 = readln().toInt()
+    println("Digite o 2° valor: ")
+    var num2 = readln().toInt()
+    while (num2 <= 0){
+        println ("Número inválido! Digite outro: ")
+        num2 = readln().toInt()
+    }
+    var resultado = num1/num2
+    println("O resultado da divisão dos dois valores é $resultado")
+}
