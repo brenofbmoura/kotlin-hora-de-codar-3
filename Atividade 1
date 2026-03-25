@@ -1,0 +1,7 @@
+fun main(){
+    var contador = mutableListOf<Int>()
+    for (c in 30 downTo 0){
+        println (c)
+    }
+    println ("EXPLOSÃO!!")
+}
