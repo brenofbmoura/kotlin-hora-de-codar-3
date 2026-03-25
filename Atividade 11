@@ -1,0 +1,11 @@
+var multiplicacao = 0
+var n = 1
+fun main(){
+    n = readLine()!!.toInt()
+    for (i in 1..n) {
+        for (j in 1..10) {
+            multiplicacao = i * j
+            println("$i * $j = ${i * j}")
+        }
+    }
+}
