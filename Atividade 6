@@ -1,0 +1,31 @@
+var aprovados = 0
+
+fun calcularMedia (notaUm: Double, notaDois: Double ): Double {
+    return (notaUm + notaDois) / 2
+}
+
+fun inicio(){
+    print("Digite a 1° nota: ")
+    var notaUm = readLine()!!.toDouble()
+    print("Informe a 2° nota: ")
+    var notaDois = readLine()!!.toDouble()
+    val media = calcularMedia(notaUm, notaDois)
+    println ("Média: $media")
+    if (media >= 9.5){
+        aprovados++
+    }
+    escolha()
+    }
+fun escolha(){
+    print("Calcular a média de outro aluno Sim/Não?:")
+    var resposta = readLine()
+
+    if (resposta == "S") {
+        inicio()
+    } else {
+        println("Aprovados: $aprovados")
+    }
+}
+fun main(){
+    inicio()
+}
